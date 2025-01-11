@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* header*/
+.header{
+    background-image: url("/Images/images/01headerbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    position: inherit;
+}
+.headernav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.headernav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+.headernav ul a{
+    text-decoration: none;
+    color: white;
+}
+.headerlogo{
+    padding-left: 20px;
+    margin-left: 20px;
+    max-width: fit-content;
+
+}
+.headercontent{
+    color: white;
+    margin-top: 190px;
+    margin-left: 100px;
+    text-align: center;
+    position: relative;
+}
+.headerh2{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.headerp{
+    margin-bottom: 40px;
+
+}
+.headerbutton{
+    background-color: rgba(255, 101, 101, 0.9);
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    text-align: center;
+}
+.headerbutton:hover{
+    background-color: rgb(255, 101, 101);
+}
+.headerp1{
+margin-bottom: 90px;
+}
+
+
+
+/* What we do*/
+.whatwedo{
+    text-align: center;
+    margin: 70px;
+    max-width: 1000px;
+
+}
+.whatwedop{
+    margin-top: 25px;
+
+}
+.whatwedocontent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 10px;
+    margin-top: 50px;
+
+}
+.whatwedoimg img{
+    min-width: 100px;
+    max-width: 100px;
+}
+
+
+/* Our results*/
+.ourresults{
+    background-image: url("/Images/images/02footerbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 290%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    max-width: 1000px;
+}
+
+.ourresultcontent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 10px;
+    margin-top: 50px;
+    text-align: center;
+
+}
+.ourresultcontent img{
+    max-width: 300px;
+}
+.ourresultcontentp{
+    margin-top: -50%;
+    margin-bottom: 200px;
+}
+.ourresultsh2{
+    margin: 50px;
+    margin-top: 100px;
+    font-weight: bold;
+    font-weight: 50px;
+}
+.percent-holder {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: white;
+}
+
+.percentage {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.text {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+
+/* Contact Us*/
+.contactus{
+    text-align: center;
+    line-height: 200%;
+    max-width: 1000px;
+}
+.contactushr{
+    width: 300px;
+    text-align: center;
+    margin-left: 650px;
+    margin-bottom: 10px;
+}
+.contactus h2{
+    margin: 50px;
+}
+.footer{
+    background-color: rgb(5,5,53);
+    margin-bottom: 100px;
+}
+.footer img{
+    width: 150px;
+    height: 50px;
+    margin-top: 50px;
+}
+.footericons{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    }
+.copyright{
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(50, 55, 50);
+}
+
+.openmenuicon,.closemenuicon{
+    display: none;
+}
+
+
+
+
+@media(max-width: 480px){
+      .ourresultcontent{
+        display: block;
+        text-align: center;
+        gap: 10px;
+        margin-top: 50px;
+        text-align: center;
+        }
+        .whatwedocontent{
+            display: block;
+            text-align: center;
+            gap: 10px;
+            margin-top: 50px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .contactushr{
+            margin-left: 45%;
+        }
+        .openmenuicon,.closemenuicon{
+            left: 5px;
+            display: flex;
+            width: 50px;
+            height: 50px;
+        }
+        .headernav{
+            position: absolute;
+            width: 480px;
+            top: 0;
+            right: 0;
+            text-align: left;
+            z-index: 2;
+            display: block;
+            margin: 10px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .headerlogo{
+            width: 30%;
+            text-align: center;
+            margin: auto;
+        }
+        .headernav ul{
+            display: none;
+            text-align: center;
+            margin: auto;
+        }
+
+
+
+
+}
+
+
+
+
+
